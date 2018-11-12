@@ -1,0 +1,34 @@
+<idea-plugin>
+  <id>com.github.ArtsiomCh.IJSDK-497</id>
+  <name>IJSDK-497</name>
+  <version>1.0</version>
+  <vendor email="achapialiou@gmail.com" url="http://github.com/ArtsiomCh/JDCleanRead">Artsiom Chapialiou</vendor>
+
+  <description><![CDATA[
+      LightCodeInsightFixtureTestCase crash on overlapping annotations
+    ]]></description>
+
+  <change-notes><![CDATA[
+      LightCodeInsightFixtureTestCase crash on overlapping annotations
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <annotator language="JAVA" implementationClass="com.github.artsiomch.IJSDK497.TestAnnotator"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
